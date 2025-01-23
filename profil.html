@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jizasec | Profils</title>
+</head>
+<body>
+
+<style>
+	*{
+		text-decoration: none;
+		outline: none;
+		list-style: none;
+		background: #242423;
+		margin: 0;
+		padding: 0;
+	}
+
+	nav{
+		display: flex;
+		align-items: center;
+		height: 74px;
+		background: #111010;
+	}
+
+
+	.siteurl a{
+		background: #111010;
+		color: #F5CB5C;
+		font-family: "";
+		font-size: 28px;
+	}
+
+	.siteurl{
+		text-align: center;
+	}
+
+	navbar li img{
+		margin-top: 10px;
+		margin: 0 auto;
+		display: grid;
+		height: 100px;
+		width: 100px;
+		border-radius: 200px;
+	}
+
+	.user{
+		margin-left: 20px;
+	}
+
+	.lateral {
+		background: #111010;
+		display: flex;
+		gap: 42px;
+		justify-content: center;
+		margin: 0 auto;
+	}
+
+	.button-direction a {
+		background: #111010;
+		color: #F5CB5C;
+		font-family: "";
+		font-size: 19px;
+		padding: 10px;
+		text-shadow: 0px 0px 56px #333533;
+		transition: .1s;
+	}
+
+	.button-direction a:hover {
+		text-decoration: underline;
+	}
+
+	navbar{
+		width: 260px;
+		position: fixed;
+		background: #111010;
+		height: 100vh;
+	}
+
+	navbar ul {
+		margin-top: 20px;
+		display: grid;
+		background: #111010;
+	}
+
+	.username{
+		margin: 0 auto;
+	}
+
+	.username a{
+		background: #111010;
+		color: red;
+	}
+
+	footer {
+		background: #111010;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		color: white;
+		text-align: center;
+		padding: 10px 0;
+		width: 260px;
+	}
+
+	.footer{
+		margin: 0 auto;
+		display: flex;
+		background: #111010;
+	}
+
+	.footer-img{
+		height: 30px;
+		width: 30px;
+	}
+
+	.footer a {
+		background: #111010;
+	}
+
+	.description {
+		margin-top: 10px;
+		background: #111010;
+		color: white;
+		font-size: 13px;
+		font-family: "Arial";
+		margin: 0 auto;
+	}
+
+	.imgpres{
+		background: #111010;
+	}
+
+	.frame{
+		margin-left: 350px;
+		margin-top: 50px;
+		display: flex;
+	}
+
+	.imgprofil{
+		width: 75px;
+		height: 75px;
+		margin: 0 auto;
+		background: none;
+	}
+
+	.profils {
+		width: 250px;
+		background: #0d0b0b;
+		border: solid 1px white;
+		border-radius: 15px;
+		margin: 0 auto;
+		display: grid;
+		cursor: pointer;
+	}
+
+	.profils:hover {
+		transition: .7s;
+		scale: 1.05;
+	}
+
+	.titre-profils{
+		background: none;
+		text-align: center;
+	}
+
+	.rang-profils {
+		background: none;
+		color: #df8511;
+		text-align: center;
+	}
+</style>
+
+<nav>
+	<ul class="user">
+		<li class="siteurl"><a href="http://Jizasec.github.io/">Jizasec.github.io</a></li>
+
+	</ul>
+	<ul class="lateral">
+		<li class="button-direction"><a href="./profil.html">Profil</a></li>
+		<li class="button-direction"><a href="./projets.html">Projet</a></li>
+		<li class="button-direction"><a href="./writeups.html">Writeup</a></li>
+		<li class="button-direction"><a href="./cv.html">CV</a></li>
+		<li class="button-direction"><a href="./profil.html">Contacts</a></li>
+	</ul>
+</nav>
+	<hr style="color: #F5CB5C;">
+<navbar>
+	<ul>
+		<li class="imgpres"><img src="./assets/img/pdp.png"></li>
+		<li class="username"><a href="">Jiza Sec</a></li>
+		<li class="description">Pentesteur & Développeur</li>
+	</ul>
+	<footer>
+		<ul class="footer">
+			<li class="footer"><a href="https://github.com/JizaSec" target="_blank"><img class="footer-img" src="./assets/img/github.png"></a></li>
+			<li class="footer"><a href="" target="_blank"><img class="footer-img" src="./assets/img/discord.jpg"></a></li>
+			<li class="footer"><a href="" target="_blank"><img class="footer-img" src="./assets/img/insta.png"></a></li>
+			<li class="footer"><a href="" target="_blank"><img class="footer-img" src="./assets/img/linkedin.png"></a></li>
+		</ul>
+	</footer>
+</navbar>
+
+
+<div class="frame">
+	<div class="profils" target="_blank" onclick="window.location.href='https://app.hackthebox.com/profile/1594478';">
+		<img class="imgprofil" src="./assets/img/hackthebox.png">
+		<p class="titre-profils" style="color: #9fef00;">HackTheBox</p>
+		<p class="rang-profils">Rang: Script Kiddie</p>
+	</div>
+	<div class="profils" target="_blank" onclick="window.location.href='https://tryhackme.com/r/p/jizasec2';">
+		<img class="imgprofil" src="./assets/img/tryhackme.png">
+		<p class="titre-profils" style="color: #c11111;">TryHackMe</p>
+		<p class="rang-profils">Rang: [0x8][HACKER]</p>
+	</div>
+	<div class="profils" target="_blank" onclick="window.location.href='https://www.root-me.org/Jiza';">
+		<img class="imgprofil" src="./assets/img/rootme.webp">
+		<p class="titre-profils" style="color: #f7f5f5;">Root-Me</p>
+		<p class="rang-profils">Rang: 45726</p>
+	</div>
+</div>
+
+
+</body>
+</html>
